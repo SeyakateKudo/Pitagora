@@ -42,7 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 11
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 8
+    serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -71,7 +71,7 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-    m_MixedBakeMode: 3
+    m_MixedBakeMode: 2
     m_BakeBackend: 0
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
@@ -87,7 +87,7 @@ LightmapSettings:
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
-  m_ShadowMaskMode: 2
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2932,7 +2932,7 @@ MonoBehaviour:
   goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
   adjust: {fileID: 0}
   wide: {fileID: 1959735518055670, guid: 824a04c58d256134481e3f9e11cccd08, type: 2}
-  sara: {fileID: 1326560083874818, guid: 9ff31dcf23c55a941821b2907bfad654, type: 2}
+  sara: {fileID: 1422649322773938, guid: ef277b7d1b8c4134db26191840ecc0ce, type: 2}
   slopeback: {fileID: 0}
   wideback: {fileID: 0}
   setball: 0
@@ -3499,7 +3499,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a6aacdd9a964974dac940147d7b211c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxCollider: {fileID: 0}
 --- !u!1 &1686611653
 GameObject:
   m_ObjectHideFlags: 0

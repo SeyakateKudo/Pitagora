@@ -514,11 +514,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Pitagora
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: C:\Users\owner\Documents\Unity\Pitagora\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 80eb57d04988d401
   metroApplicationDescription: Pitagora
   wsaImages: {}
   metroTileShortName: 
