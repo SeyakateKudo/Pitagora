@@ -363,7 +363,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4726594758580842, guid: 1ade51f70e3bd9f41af50a1ab284f6bb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.12
+      value: 9.8
       objectReference: {fileID: 0}
     - target: {fileID: 4726594758580842, guid: 1ade51f70e3bd9f41af50a1ab284f6bb, type: 2}
       propertyPath: m_LocalRotation.x
@@ -383,12 +383,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4726594758580842, guid: 1ade51f70e3bd9f41af50a1ab284f6bb, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ade51f70e3bd9f41af50a1ab284f6bb, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &2129474837
+--- !u!1001 &1705918741
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -397,15 +397,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4427011634675126, guid: 022b76e2ee04984498fd32ec843e7ef3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.02
+      value: -1.7395937
       objectReference: {fileID: 0}
     - target: {fileID: 4427011634675126, guid: 022b76e2ee04984498fd32ec843e7ef3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10.09
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 4427011634675126, guid: 022b76e2ee04984498fd32ec843e7ef3, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.07
+      value: -2.1464758
       objectReference: {fileID: 0}
     - target: {fileID: 4427011634675126, guid: 022b76e2ee04984498fd32ec843e7ef3, type: 2}
       propertyPath: m_LocalRotation.x
@@ -425,7 +425,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4427011634675126, guid: 022b76e2ee04984498fd32ec843e7ef3, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 022b76e2ee04984498fd32ec843e7ef3, type: 2}
