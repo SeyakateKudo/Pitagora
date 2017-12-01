@@ -6,6 +6,7 @@ using UnityEngine;
 public class RemoveRo : MonoBehaviour, IInputClickHandler
 {
    public GameObject ChildObject;
+    public GameObject parentObject;
 
     // Use this for initialization
     void Start()
@@ -22,6 +23,7 @@ public class RemoveRo : MonoBehaviour, IInputClickHandler
     public void OnInputClicked(InputClickedEventData eventData)
     {
         ChildObject.transform.parent = null;
+        Destroy(parentObject);
     }
 
 

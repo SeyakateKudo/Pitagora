@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class RevAirTap : MonoBehaviour , IInputClickHandler
+public class RevAirTap : MonoBehaviour, IInputClickHandler
 {
-    
+
     //Cube Prefab を扱う変数
     public GameObject ball;
     public GameObject domino;
@@ -17,8 +17,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     public GameObject adjust;
     public GameObject wide;
     public GameObject sara;
-    public GameObject slopeback;
-    public GameObject wideback;
+    public GameObject canon;
+    public GameObject fan;
 
     public bool setball;
     public bool setboard;
@@ -28,8 +28,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     public bool setgoal;
     public bool setwide;
     public bool setsara;
-    public bool setslopeback;
-    public bool setwideback;
+    public bool setcanon;
+    public bool setfan;
 
     public bool setdelete;
     public bool set_createmode;
@@ -42,41 +42,37 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
     //AirTapされたときに呼び出される関数
     public void OnInputClicked(InputClickedEventData eventData)
     {
-       /* if (set_createmode == true)
-        {*/
-          
-            //print("CreateMode");
-            //throw new NotImplementedException();
-            if (setball == true)
-            {
-                GameObject cube = GameObject.Instantiate(ball);//Cube Prefab の情報を用いて実体
-                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
-            }
-            else if (setboard == true)
-            {
-                GameObject cube = GameObject.Instantiate(domino);//Cube Prefab の情報を用いて実体
-                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
-            }
-            else if (setplane == true)
-            {
-                GameObject cube = GameObject.Instantiate(plane);//Cube Prefab の情報を用いて実体
-                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
-            }
-            else if (setstage == true)
-            {
-                GameObject cube = GameObject.Instantiate(stage);//Cube Prefab の情報を用いて実体
-                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
-            }
-            else if (setslope == true)
-            {
-                GameObject cube = GameObject.Instantiate(slope);//Cube Prefab の情報を用いて実体
-                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
-            }
-            else if (setgoal == true)
-            {
-                GameObject cube = GameObject.Instantiate(goal);//Cube Prefab の情報を用いて実体
-                cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
-            }
+      
+        if (setball == true)
+        {
+            GameObject cube = GameObject.Instantiate(ball);//Cube Prefab の情報を用いて実体
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+        }
+        else if (setboard == true)
+        {
+            GameObject cube = GameObject.Instantiate(domino);//Cube Prefab の情報を用いて実体
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+        }
+        else if (setplane == true)
+        {
+            GameObject cube = GameObject.Instantiate(plane);//Cube Prefab の情報を用いて実体
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+        }
+        else if (setstage == true)
+        {
+            GameObject cube = GameObject.Instantiate(stage);//Cube Prefab の情報を用いて実体
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+        }
+        else if (setslope == true)
+        {
+            GameObject cube = GameObject.Instantiate(slope);//Cube Prefab の情報を用いて実体
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+        }
+        else if (setgoal == true)
+        {
+            GameObject cube = GameObject.Instantiate(goal);//Cube Prefab の情報を用いて実体
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+        }
         else if (setwide == true)
         {
             GameObject cube = GameObject.Instantiate(wide);//Cube Prefab の情報を用いて実体
@@ -87,14 +83,14 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
             GameObject cube = GameObject.Instantiate(sara);//Cube Prefab の情報を用いて実体
             cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
-        else if (setslopeback == true)
+        else if (setcanon == true)
         {
-            GameObject cube = GameObject.Instantiate(slopeback);//Cube Prefab の情報を用いて実体
+            GameObject cube = GameObject.Instantiate(canon);//Cube Prefab の情報を用いて実体
             cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
-        else if (setwideback == true)
+        else if (setfan == true)
         {
-            GameObject cube = GameObject.Instantiate(wideback);//Cube Prefab の情報を用いて実体
+            GameObject cube = GameObject.Instantiate(fan);//Cube Prefab の情報を用いて実体
             cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
 
@@ -109,15 +105,7 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
                 print("AirTapされました");
             }
         }
-        /*else if(set_adjustmode == true)
-        {
-           
-            print("AdjustModeです");
-        }
-        else
-        {
-            print("AirTapされました");
-        }*/
+       
     
 
     public void BallClickButton()
@@ -131,8 +119,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = false;
         rev.setsara = false;
-        rev.setslopeback = false;
-        rev.setwide = false;
+        rev.setcanon = false;
+        rev.setfan = false;
     }
 
     public void BoardClickButton()
@@ -146,8 +134,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = false;
         rev.setsara = false;
-        rev.setslopeback = false;
-        rev.setwide = false;
+        rev.setcanon = false;
+        rev.setfan = false;
     }
 
     public void PlaneClickButton()
@@ -161,8 +149,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = false;
         rev.setsara = false;
-        rev.setslopeback = false;
-        rev.setwide = false;
+        rev.setcanon = false;
+        rev.setfan = false;
     }
 
     public void StageClickButton()
@@ -176,8 +164,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = false;
         rev.setsara = false;
-        rev.setslopeback = false;
-        rev.setwide = false;
+        rev.setcanon = false;
+        rev.setfan = false;
     }
 
     public void SlopeClickButton()
@@ -191,8 +179,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = false;
         rev.setsara = false;
-        rev.setslopeback = false;
-        rev.setwide = false;
+        rev.setcanon = false;
+        rev.setfan = false;
     }
 
     public void GoalClickButton()
@@ -206,8 +194,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = false;
         rev.setsara = false;
-        rev.setslopeback = false;
-        rev.setwide = false;
+        rev.setcanon = false;
+        rev.setfan = false;
     }
 
     public void EmptyClickButton()
@@ -221,8 +209,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = false;
         rev.setsara = false;
-        rev.setslopeback = false;
-        rev.setwide = false;
+        rev.setcanon = false;
+        rev.setfan = false;
     }
 
     public void DeleteClickButton()
@@ -236,8 +224,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = true;
         rev.setwide = false;
         rev.setsara = false;
-        rev.setslopeback = false;
-        rev.setwide = false;
+        rev.setcanon = false;
+        rev.setfan = false;
     }
 
     public void WideClickButton()
@@ -251,8 +239,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = true;
         rev.setsara = false;
-        rev.setslopeback = false;
-        rev.setwideback = false;
+        rev.setcanon = false;
+        rev.setfan = false;
     }
 
     public void SaraClickButton()
@@ -266,11 +254,11 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = false;
         rev.setsara = true;
-        rev.setslopeback = false;
-        rev.setwide = false;
+        rev.setcanon = false;
+        rev.setfan = false;
     }
 
-    public void BackSlopeButton()
+    public void CanonButton()
     {
         rev.setball = false;
         rev.setboard = false;
@@ -281,10 +269,11 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = false;
         rev.setsara = false;
-        rev.setslopeback = true;
-        rev.setwide = false;
+        rev.setcanon = true;
+        rev.setfan = false;
     }
-    public void BackWideButton()
+
+        public void FanButton()
     {
         rev.setball = false;
         rev.setboard = false;
@@ -295,8 +284,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = false;
         rev.setsara = false;
-        rev.setslopeback = false;
-        rev.setwideback = true;
+        rev.setcanon = false;
+        rev.setfan = true;
     }
 
 
@@ -332,8 +321,8 @@ public class RevAirTap : MonoBehaviour , IInputClickHandler
         rev.setdelete = false;
         rev.setwide = false;
         rev.setsara = false;
-        rev.setslopeback = false;
-        rev.setwide = false;
+        rev.setcanon = false;
+        rev.setfan = false;
 
         rev.set_createmode = false;
         rev.set_adjustmode = false;
