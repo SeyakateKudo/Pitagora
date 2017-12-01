@@ -18,9 +18,8 @@ public class Rotate : MonoBehaviour
     {
         for (int f = 360; f >= 0; f--)
         {
-            gameObject.transform.Rotate(0,f,0); 
-            yield return new WaitForSeconds(1.2f);
-            print(Time.time);
+            yield return new WaitForSeconds(1f);
+            gameObject.transform.Rotate(0, f, 0);
         }
     }
 
