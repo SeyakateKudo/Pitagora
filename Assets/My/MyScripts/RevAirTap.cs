@@ -93,6 +93,10 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
             GameObject cube = GameObject.Instantiate(fan);//Cube Prefab の情報を用いて実体
             cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
+        else if(set_adjustmode == true)
+        {
+            gameObject.transform.Rotate(new Vector3(0, 0, 5));
+        }
 
 
         else if (setdelete == true)
@@ -121,6 +125,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = false;
         rev.setcanon = false;
         rev.setfan = false;
+        rev.set_adjustmode = false;
     }
 
     public void BoardClickButton()
@@ -136,6 +141,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = false;
         rev.setcanon = false;
         rev.setfan = false;
+        rev.set_adjustmode = false;
     }
 
     public void PlaneClickButton()
@@ -151,6 +157,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = false;
         rev.setcanon = false;
         rev.setfan = false;
+        rev.set_adjustmode = false;
     }
 
     public void StageClickButton()
@@ -166,6 +173,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = false;
         rev.setcanon = false;
         rev.setfan = false;
+        rev.set_adjustmode = false;
     }
 
     public void SlopeClickButton()
@@ -181,6 +189,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = false;
         rev.setcanon = false;
         rev.setfan = false;
+        rev.set_adjustmode = false;
     }
 
     public void GoalClickButton()
@@ -196,6 +205,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = false;
         rev.setcanon = false;
         rev.setfan = false;
+        rev.set_adjustmode = false;
     }
 
     public void EmptyClickButton()
@@ -211,6 +221,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = false;
         rev.setcanon = false;
         rev.setfan = false;
+        rev.set_adjustmode = false;
     }
 
     public void DeleteClickButton()
@@ -226,6 +237,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = false;
         rev.setcanon = false;
         rev.setfan = false;
+        rev.set_adjustmode = false;
     }
 
     public void WideClickButton()
@@ -241,6 +253,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = false;
         rev.setcanon = false;
         rev.setfan = false;
+        rev.set_adjustmode = false;
     }
 
     public void SaraClickButton()
@@ -256,6 +269,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = true;
         rev.setcanon = false;
         rev.setfan = false;
+        rev.set_adjustmode = false;
     }
 
     public void CanonButton()
@@ -271,6 +285,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = false;
         rev.setcanon = true;
         rev.setfan = false;
+        rev.set_adjustmode = false;
     }
 
         public void FanButton()
@@ -286,6 +301,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setsara = false;
         rev.setcanon = false;
         rev.setfan = true;
+        rev.set_adjustmode = false;
     }
 
 
@@ -301,10 +317,18 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
 
     public void AdjustModeButton()
     {
-        rev.set_createmode = false;
+        rev.setball = false;
+        rev.setboard = false;
+        rev.setplane = false;
+        rev.setstage = false;
+        rev.setslope = false;
+        rev.setgoal = false;
+        rev.setdelete = false;
+        rev.setwide = false;
+        rev.setsara = false;
+        rev.setcanon = false;
+        rev.setfan = false;
         rev.set_adjustmode = true;
-        print("AdjustMode");
-        //adjust.SetActive(true);
     }
 
     
