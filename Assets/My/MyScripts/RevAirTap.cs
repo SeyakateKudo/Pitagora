@@ -93,11 +93,6 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
             GameObject cube = GameObject.Instantiate(fan);//Cube Prefab の情報を用いて実体
             cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
-        else if(set_adjustmode == true)
-        {
-            gameObject.transform.Rotate(new Vector3(0, 0, 5));
-        }
-
 
         else if (setdelete == true)
             {

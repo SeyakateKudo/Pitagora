@@ -63,16 +63,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d08e4766e5b0f4eac099bbe1a883c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 1106002387485344, guid: 0ac81d63fbf9454478a4446c987099d2, type: 2}
+  ball: {fileID: 1307239462663942, guid: ff821bd8f8e80894b8a4dd06540a152c, type: 2}
   domino: {fileID: 1553271191439348, guid: 68d04a4ff64aae34bb64baeadd60e65c, type: 2}
   plane: {fileID: 1123978621931166, guid: 2be722eb0d6019c47afaf8568a681af7, type: 2}
   stage: {fileID: 1098544731813924, guid: f575c2a71e7b4ca48bac9c2df59ee147, type: 2}
-  slope: {fileID: 1115909882806580, guid: a9cf27bbd2fd961488aee1a9cc9caf1b, type: 2}
+  slope: {fileID: 1581339105135444, guid: 998ce3bf0b1f3864bb0ba860eb33bdae, type: 2}
   goal: {fileID: 1087198633825384, guid: 0ed271e1e9cdc414894a1337cb6c49a0, type: 2}
   adjust: {fileID: 1201438641533850}
-  wide: {fileID: 1665769750125940, guid: cbc24d6ae18815049bef9e3f7f1f4358, type: 2}
+  wide: {fileID: 1406852900719382, guid: d55b6cf10ae84ae48a61fd781ed58e6c, type: 2}
   sara: {fileID: 1422649322773938, guid: ef277b7d1b8c4134db26191840ecc0ce, type: 2}
-  canon: {fileID: 1753722381631500, guid: 7dff630ef25373e4eb670b8a462c4c1a, type: 2}
+  canon: {fileID: 1649844276687032, guid: 708e54c5a4fbe1c47a423215f57aba7c, type: 2}
   fan: {fileID: 1134942691720482, guid: 1ade51f70e3bd9f41af50a1ab284f6bb, type: 2}
   setball: 0
   setboard: 0

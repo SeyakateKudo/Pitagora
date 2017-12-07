@@ -20,7 +20,6 @@ public class FanController : MonoBehaviour
             wind.transform.position = fanmuzzle.position;
             Destroy(winds, 2f);
             yield return new WaitForSeconds(1f);
-            print(Time.time);
         }
     }
 
