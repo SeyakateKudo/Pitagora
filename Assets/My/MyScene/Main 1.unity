@@ -226,6 +226,7 @@ MonoBehaviour:
   sara: {fileID: 1326560083874818, guid: 9ff31dcf23c55a941821b2907bfad654, type: 2}
   canon: {fileID: 1753722381631500, guid: 7dff630ef25373e4eb670b8a462c4c1a, type: 2}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -236,6 +237,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -262,7 +264,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.09837069, g: 1, b: 0.022545436, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -549,6 +551,7 @@ MonoBehaviour:
   sara: {fileID: 0}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -559,6 +562,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -585,7 +589,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 0.04476642, b: 0.04476642, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 0.9852941, b: 0.21064903, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -859,6 +863,84 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 498625951}
+--- !u!1 &526114680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1538358367929862, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 526114681}
+  - component: {fileID: 526114683}
+  - component: {fileID: 526114682}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &526114681
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224008540415207108, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526114680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1403349932}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &526114682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114546045174428530, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526114680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Spiral
+--- !u!222 &526114683
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222023645138768774, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526114680}
 --- !u!1 &563835714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,6 +1082,7 @@ MonoBehaviour:
   sara: {fileID: 0}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1010,6 +1093,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -1036,7 +1120,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 0.9852941, b: 0.16987832, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1333,6 +1417,7 @@ MonoBehaviour:
   sara: {fileID: 1326560083874818, guid: 9ff31dcf23c55a941821b2907bfad654, type: 2}
   canon: {fileID: 1753722381631500, guid: 7dff630ef25373e4eb670b8a462c4c1a, type: 2}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1343,6 +1428,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -1587,6 +1673,7 @@ MonoBehaviour:
   sara: {fileID: 0}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1597,6 +1684,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -1623,7 +1711,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 0.00746108, b: 0.00746108, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 0.9632353, b: 0.12621717, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1689,6 +1777,11 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 791003177}
+--- !u!4 &804661291 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000010560871102, guid: d379ed0a5618c9f479f58bd83a2d0ad3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1612587706}
 --- !u!1 &843643727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,6 +1857,7 @@ MonoBehaviour:
   sara: {fileID: 1326560083874818, guid: 9ff31dcf23c55a941821b2907bfad654, type: 2}
   canon: {fileID: 1753722381631500, guid: 7dff630ef25373e4eb670b8a462c4c1a, type: 2}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -1774,6 +1868,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -1954,6 +2049,10 @@ GameObject:
   - component: {fileID: 931797298}
   - component: {fileID: 931797297}
   - component: {fileID: 931797296}
+  - component: {fileID: 931797303}
+  - component: {fileID: 931797302}
+  - component: {fileID: 931797301}
+  - component: {fileID: 931797300}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2048,6 +2147,7 @@ RectTransform:
   - {fileID: 843643728}
   - {fileID: 1813334115}
   - {fileID: 1090066086}
+  - {fileID: 1403349932}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2056,6 +2156,78 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.026}
   m_SizeDelta: {x: 695, y: 276}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &931797300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931797295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac8d5b128a1d8204fb76c86f47b75912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PivotAxis: 0
+  TargetTransform: {fileID: 804661291}
+--- !u!114 &931797301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931797295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c655338633f4544180b3d90a593ac17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TagalongDistance: 2
+  EnforceDistance: 1
+  PositionUpdateSpeed: 3
+  SmoothMotion: 1
+  SmoothingFactor: 0.75
+  MinimumHorizontalOverlap: 0.1
+  TargetHorizontalOverlap: 1
+  MinimumVerticalOverlap: 0.1
+  TargetVerticalOverlap: 1
+  HorizontalRayCount: 3
+  VerticalRayCount: 3
+  MinimumTagalongDistance: 1
+  MaintainFixedSize: 1
+  DepthUpdateSpeed: 3
+  DebugDrawLines: 0
+  DebugPointLight: {fileID: 0}
+--- !u!114 &931797302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931797295}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb69de839bd015f4099b5bd2c45e53e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseUnscaledTime: 1
+  PositionPerSecond: 30
+  RotationDegreesPerSecond: 720
+  RotationSpeedScaler: 0
+  ScalePerSecond: 5
+  SmoothLerpToTarget: 0
+  SmoothPositionLerpRatio: 0.5
+  SmoothRotationLerpRatio: 0.5
+  SmoothScaleLerpRatio: 0.5
+--- !u!65 &931797303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931797295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &981029210
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,6 +2369,7 @@ MonoBehaviour:
   sara: {fileID: 0}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -2207,6 +2380,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -2233,7 +2407,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.028763002, g: 0.97794116, b: 0.15313819, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2373,6 +2547,7 @@ MonoBehaviour:
   sara: {fileID: 0}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -2383,6 +2558,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -2409,7 +2585,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.091277845, g: 1, b: 0.058823526, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2694,6 +2870,7 @@ MonoBehaviour:
   sara: {fileID: 1326560083874818, guid: 9ff31dcf23c55a941821b2907bfad654, type: 2}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -2704,6 +2881,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -2730,7 +2908,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.15189713, g: 1, b: 0.03730534, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2806,6 +2984,8 @@ GameObject:
   - component: {fileID: 1305273362}
   - component: {fileID: 1305273361}
   - component: {fileID: 1305273360}
+  - component: {fileID: 1305273364}
+  - component: {fileID: 1305273363}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2858,6 +3038,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1305273363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305273359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 911850839, guid: f7b54ff4a43d4fcf81b4538b678e0bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+  m_NormalizedNavigationToScreenOffsetScalar: 500
+  m_TimeToPressOnTap: 0.3
+--- !u!114 &1305273364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305273359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1898958984, guid: f7b54ff4a43d4fcf81b4538b678e0bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1351659345
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,6 +3147,173 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1351659345}
+--- !u!1 &1403349931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1512076664311250, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1403349932}
+  - component: {fileID: 1403349936}
+  - component: {fileID: 1403349935}
+  - component: {fileID: 1403349934}
+  - component: {fileID: 1403349933}
+  m_Layer: 5
+  m_Name: SpiralButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1403349932
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224008646672131436, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1403349931}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 19.78004}
+  m_LocalScale: {x: 0.99763113, y: 0.9980065, z: 0.99999994}
+  m_Children:
+  - {fileID: 526114681}
+  m_Father: {fileID: 931797299}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 100, y: 56.99932}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1403349933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114982310772906302, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1403349931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d08e4766e5b0f4eac099bbe1a883c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
+  domino: {fileID: 1553271191439348, guid: 68d04a4ff64aae34bb64baeadd60e65c, type: 2}
+  plane: {fileID: 1122707444045390, guid: 790e249a4c9274c46af7a6af70ca66e3, type: 2}
+  stage: {fileID: 1219935309607334, guid: 5840d25243a1d2449a135a3f7e01bef7, type: 2}
+  slope: {fileID: 1843315539557904, guid: e4a80d598cce2514785d5e58f53d8f56, type: 2}
+  goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
+  adjust: {fileID: 0}
+  wide: {fileID: 0}
+  sara: {fileID: 0}
+  canon: {fileID: 0}
+  fan: {fileID: 0}
+  spiral: {fileID: 0}
+  setball: 0
+  setboard: 0
+  setplane: 0
+  setstage: 0
+  setslope: 0
+  setgoal: 0
+  setwide: 0
+  setsara: 0
+  setcanon: 0
+  setfan: 0
+  setspiral: 0
+  setdelete: 0
+  set_createmode: 0
+  set_adjustmode: 0
+  rev: {fileID: 2056088988}
+--- !u!114 &1403349934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114286617881503548, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1403349931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.00746108, b: 0.00746108, a: 1}
+    m_PressedColor: {r: 0.03676468, g: 1, b: 0.20283976, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1403349935}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1403349933}
+        m_MethodName: SpiralClickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1403349935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114525532092402610, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1403349931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1403349936
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222266862687901152, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1403349931}
 --- !u!1 &1440803067
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,6 +3457,7 @@ MonoBehaviour:
   sara: {fileID: 0}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -3089,6 +3468,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -3115,7 +3495,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.21379304, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3291,6 +3671,7 @@ MonoBehaviour:
   sara: {fileID: 0}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -3301,6 +3682,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -3327,7 +3709,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.17241383, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3456,6 +3838,7 @@ MonoBehaviour:
   sara: {fileID: 1422649322773938, guid: ef277b7d1b8c4134db26191840ecc0ce, type: 2}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -3466,6 +3849,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -3492,7 +3876,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.03757567, g: 1, b: 0.16657704, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3621,6 +4005,7 @@ MonoBehaviour:
   sara: {fileID: 0}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -3631,6 +4016,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -3657,7 +4043,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9485294, g: 0.013948975, b: 0.013948975, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0, g: 0.97794116, b: 0.08767747, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3889,7 +4275,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.04411763, g: 1, b: 0.24847862, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3988,6 +4374,7 @@ MonoBehaviour:
   sara: {fileID: 0}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -3998,6 +4385,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -4044,6 +4432,11 @@ Prefab:
     - target: {fileID: 1000010302963436, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012149591842, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
+        type: 2}
+      propertyPath: RoomModel
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
@@ -4181,9 +4574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28a6036ad6357c41a9b33ff07cd7c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  audioClip1: {fileID: 8300000, guid: 352eec7e2d3de884890ad605e7164156, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &1813334118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4206,6 +4596,7 @@ MonoBehaviour:
   sara: {fileID: 0}
   canon: {fileID: 0}
   fan: {fileID: 0}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -4216,6 +4607,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -4242,7 +4634,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.21902756, g: 1, b: 0.06763625, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4462,6 +4854,7 @@ MonoBehaviour:
   sara: {fileID: 0}
   canon: {fileID: 0}
   fan: {fileID: 1134942691720482, guid: 1ade51f70e3bd9f41af50a1ab284f6bb, type: 2}
+  spiral: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -4472,6 +4865,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -4498,7 +4892,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.12161296, g: 0.9852941, b: 0.05071366, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1

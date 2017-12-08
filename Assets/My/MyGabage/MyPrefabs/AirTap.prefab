@@ -74,6 +74,7 @@ MonoBehaviour:
   sara: {fileID: 1422649322773938, guid: ef277b7d1b8c4134db26191840ecc0ce, type: 2}
   canon: {fileID: 1649844276687032, guid: 708e54c5a4fbe1c47a423215f57aba7c, type: 2}
   fan: {fileID: 1134942691720482, guid: 1ade51f70e3bd9f41af50a1ab284f6bb, type: 2}
+  spiral: {fileID: 1820595416254990, guid: 268ee76324ae6354faa6271d5b58a494, type: 2}
   setball: 0
   setboard: 0
   setplane: 0
@@ -84,6 +85,7 @@ MonoBehaviour:
   setsara: 0
   setcanon: 0
   setfan: 0
+  setspiral: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
