@@ -20,9 +20,7 @@ public class Enablegr : MonoBehaviour {
 
     public void OnClick()
     {
-        audioSource = gameObject.GetComponent<AudioSource>();
-        audioSource.clip = audioClip1;
-        audioSource.Play();
+        PlayAudio();
 
         GameObject[] ball = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject balls in ball)
@@ -32,4 +30,13 @@ public class Enablegr : MonoBehaviour {
             rb.isKinematic = false;
         }
     }
+
+    public void PlayAudio()
+    {
+        audioSource = gameObject.GetComponent<AudioSource>();
+        audioSource.clip = audioClip1;
+        audioSource.Play();
+    }
+
+
 }

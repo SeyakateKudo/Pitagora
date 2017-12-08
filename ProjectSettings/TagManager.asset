@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Adjust
   - bar
+  - Audio
   layers:
   - Default
   - TransparentFX
