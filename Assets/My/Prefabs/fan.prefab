@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 23148838315339964}
   m_Layer: 0
   m_Name: AdjustBar
-  m_TagString: Untagged
+  m_TagString: bar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
