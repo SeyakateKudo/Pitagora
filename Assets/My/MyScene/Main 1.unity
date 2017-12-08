@@ -772,7 +772,13 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82268290280828890, guid: 816188550b8911c4aabccd179229dcdf,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114285534780094522, guid: 816188550b8911c4aabccd179229dcdf, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 816188550b8911c4aabccd179229dcdf, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &498625951
@@ -2292,12 +2298,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1136746301}
---- !u!114 &1218399499 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114285534780094522, guid: 816188550b8911c4aabccd179229dcdf,
-    type: 2}
-  m_PrefabInternal: {fileID: 423453268}
-  m_Script: {fileID: 11500000, guid: f28a6036ad6357c41a9b33ff07cd7c3b, type: 3}
 --- !u!1 &1226430653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,7 +3926,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28a6036ad6357c41a9b33ff07cd7c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   audioClip1: {fileID: 8300000, guid: 352eec7e2d3de884890ad605e7164156, type: 3}
+  audioSource: {fileID: 0}
 --- !u!114 &1813334118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4014,7 +4016,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 0
-      - m_Target: {fileID: 1218399499}
+      - m_Target: {fileID: 1856928509}
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -4307,6 +4309,23 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1853763703}
+--- !u!1 &1856928506 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1462329688695356, guid: 816188550b8911c4aabccd179229dcdf,
+    type: 2}
+  m_PrefabInternal: {fileID: 423453268}
+--- !u!114 &1856928509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1856928506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 210b3b2b600051b4fa13cc2d45c64d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip1: {fileID: 8300000, guid: 352eec7e2d3de884890ad605e7164156, type: 3}
 --- !u!1 &1921519850
 GameObject:
   m_ObjectHideFlags: 0

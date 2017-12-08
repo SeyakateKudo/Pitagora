@@ -9,6 +9,7 @@ public class Goal : MonoBehaviour
     public GameObject flag;
     public AudioClip audioClip2;
     private AudioSource audioSource;
+    private AudioSource au;
 
 
     // Use this for initialization
@@ -16,7 +17,6 @@ public class Goal : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         flag.SetActive(false);
-        Enablegr en = new Enablegr();
     }
 
     // Update is called once per frame
@@ -33,13 +33,12 @@ public class Goal : MonoBehaviour
             anim.SetBool("IsGoal", true);
 
             GameObject audio = GameObject.FindGameObjectWithTag("Audio");
-            Destroy(audio);
+            au =audio.GetComponent<AudioSource>();
+            au.enabled = false;
 
             audioSource = gameObject.GetComponent<AudioSource>();
             audioSource.clip = audioClip2;
             audioSource.Play();
-
-            Instantiate(audio);
 
         }
     }
