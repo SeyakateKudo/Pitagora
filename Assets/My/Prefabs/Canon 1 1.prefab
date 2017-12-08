@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 135168185433397578}
   - component: {fileID: 114683535050412240}
   - component: {fileID: 114353647174750910}
+  - component: {fileID: 114976908114185910}
   m_Layer: 0
   m_Name: Canon 1 1
   m_TagString: Untagged
@@ -528,6 +529,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2cb240794df159f42abeee4ad9e9754c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114976908114185910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649844276687032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a39de7ba4bae6428d12fac4bc9bde7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &135168185433397578

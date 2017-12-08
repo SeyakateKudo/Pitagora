@@ -21,6 +21,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
     public GameObject fan;
     public GameObject spiral;
 
+    public GameObject on;
+    public GameObject off;
+
     public bool setball;
     public bool setboard;
     public bool setplane;
@@ -128,6 +131,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
     }
 
     public void BoardClickButton()
@@ -145,6 +151,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
     }
 
     public void PlaneClickButton()
@@ -162,6 +171,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
     }
 
     public void StageClickButton()
@@ -179,6 +191,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
     }
 
     public void SlopeClickButton()
@@ -196,6 +211,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
     }
 
     public void GoalClickButton()
@@ -213,6 +231,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
     }
 
     public void EmptyClickButton()
@@ -231,6 +252,8 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.set_adjustmode = false;
         rev.setspiral = false;
 
+        off.SetActive(true);
+        on.SetActive(false);
     }
 
     public void DeleteClickButton()
@@ -248,6 +271,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
     }
 
     public void WideClickButton()
@@ -265,6 +291,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
     }
 
     public void SaraClickButton()
@@ -282,6 +311,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
     }
 
     public void CanonButton()
@@ -299,6 +331,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
     }
 
         public void FanButton()
@@ -316,6 +351,9 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = true;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
     }
     public void SpiralClickButton()
     {
@@ -333,6 +371,8 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.set_adjustmode = false;
         rev.setspiral = true;
 
+        off.SetActive(false);
+        on.SetActive(false);
     }
 
 
