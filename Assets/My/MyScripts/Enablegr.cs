@@ -5,9 +5,11 @@ using UnityEngine;
 public class Enablegr : MonoBehaviour {
 
     Rigidbody rb;
+    public AudioClip audioClip1;
+    private AudioSource audioSource;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         
 	}
 	
@@ -18,6 +20,10 @@ public class Enablegr : MonoBehaviour {
 
     public void OnClick()
     {
+        audioSource = gameObject.GetComponent<AudioSource>();
+        audioSource.clip = audioClip1;
+        audioSource.Play();
+
         GameObject[] ball = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject balls in ball)
         {
