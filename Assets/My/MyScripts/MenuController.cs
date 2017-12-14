@@ -5,6 +5,7 @@ using UnityEngine;
 public class MenuController : MonoBehaviour {
 
     public GameObject[] bu = new GameObject[15];
+    public GameObject[] trs = new GameObject[6];
     public GameObject on;
     public GameObject off;
 
@@ -26,7 +27,11 @@ public class MenuController : MonoBehaviour {
             bus.SetActive(false);
             off.SetActive(false);
             on.SetActive(true);
-        }        
+        }
+        foreach (GameObject trss in trs)
+        {
+            trss.SetActive(true);
+        }
 
     }
     public void OnClick()
@@ -36,6 +41,10 @@ public class MenuController : MonoBehaviour {
             bus.SetActive(true);
             on.SetActive(false);
             off.SetActive(true);
+        }
+        foreach (GameObject trss in trs)
+        {
+            trss.SetActive(false);
         }
     }
 }

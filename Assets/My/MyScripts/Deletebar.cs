@@ -17,7 +17,7 @@ public class Deletebar : MonoBehaviour {
 
     public void OnClick()
     {
-        GameObject[] bar = GameObject.FindGameObjectsWithTag("bar"); ;
+        GameObject[] bar = GameObject.FindGameObjectsWithTag("bar"); 
         foreach (GameObject bars in bar)
         {
             Destroy(bars);
