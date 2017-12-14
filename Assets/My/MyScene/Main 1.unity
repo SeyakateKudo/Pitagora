@@ -301,6 +301,7 @@ MonoBehaviour:
   canon: {fileID: 1753722381631500, guid: 7dff630ef25373e4eb670b8a462c4c1a, type: 2}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -314,6 +315,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -437,7 +439,7 @@ RectTransform:
   m_Children:
   - {fileID: 1713194850}
   m_Father: {fileID: 931797299}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -455,6 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b9f4438b8287b4897035dec80d4db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: {fileID: 0}
 --- !u!114 &180560502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -475,8 +478,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.9852941, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.25892478, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -762,6 +765,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -775,6 +779,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -1056,7 +1061,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4773230584868076, guid: 816188550b8911c4aabccd179229dcdf, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1462329688695356, guid: 816188550b8911c4aabccd179229dcdf, type: 2}
       propertyPath: m_IsActive
@@ -1336,7 +1341,7 @@ RectTransform:
   m_Children:
   - {fileID: 1811884902}
   m_Father: {fileID: 931797299}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1354,6 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b9f4438b8287b4897035dec80d4db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: {fileID: 1957024486}
 --- !u!114 &565739825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1374,8 +1380,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.029411793, b: 0.029411793, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.16377822, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1503,6 +1509,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -1516,6 +1523,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -1798,7 +1806,7 @@ RectTransform:
   m_Children:
   - {fileID: 233293812}
   m_Father: {fileID: 931797299}
-  m_RootOrder: 12
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1840,6 +1848,7 @@ MonoBehaviour:
   canon: {fileID: 1753722381631500, guid: 7dff630ef25373e4eb670b8a462c4c1a, type: 2}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 0}
   off: {fileID: 0}
   setball: 0
@@ -1853,6 +1862,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -2098,6 +2108,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -2111,6 +2122,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -2208,6 +2220,177 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010560871102, guid: d379ed0a5618c9f479f58bd83a2d0ad3,
     type: 2}
   m_PrefabInternal: {fileID: 1612587706}
+--- !u!1 &812002870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1512076664311250, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 812002871}
+  - component: {fileID: 812002875}
+  - component: {fileID: 812002874}
+  - component: {fileID: 812002873}
+  - component: {fileID: 812002872}
+  m_Layer: 5
+  m_Name: StartObjButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &812002871
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224008646672131436, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812002870}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 19.78004}
+  m_LocalScale: {x: 0.996678, y: 0.9980065, z: 0.99999994}
+  m_Children:
+  - {fileID: 901358652}
+  m_Father: {fileID: 931797299}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -70.0004, y: 56.99932}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &812002872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114982310772906302, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812002870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d08e4766e5b0f4eac099bbe1a883c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
+  domino: {fileID: 1553271191439348, guid: 68d04a4ff64aae34bb64baeadd60e65c, type: 2}
+  plane: {fileID: 1122707444045390, guid: 790e249a4c9274c46af7a6af70ca66e3, type: 2}
+  stage: {fileID: 1219935309607334, guid: 5840d25243a1d2449a135a3f7e01bef7, type: 2}
+  slope: {fileID: 1843315539557904, guid: e4a80d598cce2514785d5e58f53d8f56, type: 2}
+  goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
+  adjust: {fileID: 0}
+  wide: {fileID: 0}
+  sara: {fileID: 0}
+  canon: {fileID: 0}
+  fan: {fileID: 0}
+  spiral: {fileID: 0}
+  stobj: {fileID: 1764557137072058, guid: 552a957adc20c2b4eb2a1527ec7e927d, type: 2}
+  on: {fileID: 864109287}
+  off: {fileID: 2125319709}
+  setball: 0
+  setboard: 0
+  setplane: 0
+  setstage: 0
+  setslope: 0
+  setgoal: 0
+  setwide: 0
+  setsara: 0
+  setcanon: 0
+  setfan: 0
+  setspiral: 0
+  setstobj: 0
+  setdelete: 0
+  set_createmode: 0
+  set_adjustmode: 0
+  rev: {fileID: 2056088988}
+--- !u!114 &812002873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114286617881503548, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812002870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.00746108, b: 0.00746108, a: 1}
+    m_PressedColor: {r: 0.03676468, g: 1, b: 0.20283976, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 812002874}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 812002872}
+        m_MethodName: StobjClickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &812002874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114525532092402610, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812002870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &812002875
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222266862687901152, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812002870}
 --- !u!1 &843643727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,7 +2425,7 @@ RectTransform:
   m_Children:
   - {fileID: 1831720920}
   m_Father: {fileID: 931797299}
-  m_RootOrder: 13
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2284,6 +2467,7 @@ MonoBehaviour:
   canon: {fileID: 1753722381631500, guid: 7dff630ef25373e4eb670b8a462c4c1a, type: 2}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 0}
   off: {fileID: 0}
   setball: 0
@@ -2297,6 +2481,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -2432,7 +2617,7 @@ RectTransform:
   m_Children:
   - {fileID: 262342348}
   m_Father: {fileID: 931797299}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2594,6 +2779,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 0}
   off: {fileID: 0}
   setball: 0
@@ -2607,10 +2793,89 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
   rev: {fileID: 0}
+--- !u!1 &901358651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1538358367929862, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 901358652}
+  - component: {fileID: 901358654}
+  - component: {fileID: 901358653}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &901358652
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224008540415207108, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 901358651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 812002871}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &901358653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114546045174428530, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 901358651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: StartOb
+--- !u!222 &901358654
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222023645138768774, guid: f937b7fa56df8b341ba9370b90825778,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 901358651}
 --- !u!1 &914589617
 GameObject:
   m_ObjectHideFlags: 0
@@ -2766,9 +3031,9 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931797295}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.279}
-  m_LocalScale: {x: 0.001274233, y: 0.0012825567, z: 0.001}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.28}
+  m_LocalScale: {x: 0.0012675513, y: 0.0011042751, z: 0.001}
   m_Children:
   - {fileID: 247305480}
   - {fileID: 791003178}
@@ -2782,11 +3047,12 @@ RectTransform:
   - {fileID: 1571185849}
   - {fileID: 174109422}
   - {fileID: 1853763704}
-  - {fileID: 754744564}
-  - {fileID: 843643728}
+  - {fileID: 1403349932}
+  - {fileID: 812002871}
   - {fileID: 1813334115}
   - {fileID: 1090066086}
-  - {fileID: 1403349932}
+  - {fileID: 754744564}
+  - {fileID: 843643728}
   - {fileID: 864109288}
   - {fileID: 2125319710}
   - {fileID: 1605943783}
@@ -2796,7 +3062,7 @@ RectTransform:
   - {fileID: 1210663017}
   - {fileID: 565739823}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3017,6 +3283,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -3030,6 +3297,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -3197,6 +3465,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -3210,6 +3479,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -3333,7 +3603,7 @@ RectTransform:
   m_Children:
   - {fileID: 1634704838}
   m_Father: {fileID: 931797299}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3351,6 +3621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b9f4438b8287b4897035dec80d4db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: {fileID: 0}
 --- !u!114 &1131289670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3371,8 +3642,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.97794116, g: 0.0071907504, b: 0.0071907504, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.16755164, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3545,7 +3816,7 @@ RectTransform:
   m_Children:
   - {fileID: 1654165689}
   m_Father: {fileID: 931797299}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3563,6 +3834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b9f4438b8287b4897035dec80d4db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: {fileID: 1957024486}
 --- !u!114 &1210663019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3583,8 +3855,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.9852941, g: 0.028979266, b: 0.028979266, a: 1}
+    m_PressedColor: {r: 0, g: 1, b: 0.25517225, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3726,6 +3998,48 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1226430653}
+--- !u!1001 &1234812251
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4324469436821036, guid: 998ce3bf0b1f3864bb0ba860eb33bdae, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324469436821036, guid: 998ce3bf0b1f3864bb0ba860eb33bdae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324469436821036, guid: 998ce3bf0b1f3864bb0ba860eb33bdae, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324469436821036, guid: 998ce3bf0b1f3864bb0ba860eb33bdae, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324469436821036, guid: 998ce3bf0b1f3864bb0ba860eb33bdae, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324469436821036, guid: 998ce3bf0b1f3864bb0ba860eb33bdae, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324469436821036, guid: 998ce3bf0b1f3864bb0ba860eb33bdae, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324469436821036, guid: 998ce3bf0b1f3864bb0ba860eb33bdae, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 998ce3bf0b1f3864bb0ba860eb33bdae, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1270791175
 GameObject:
   m_ObjectHideFlags: 0
@@ -3790,6 +4104,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -3803,6 +4118,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -3952,12 +4268,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1305273359}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1305273363
 MonoBehaviour:
@@ -4101,7 +4417,7 @@ RectTransform:
   m_Children:
   - {fileID: 526114681}
   m_Father: {fileID: 931797299}
-  m_RootOrder: 16
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4132,6 +4448,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -4145,6 +4462,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -4381,6 +4699,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -4394,6 +4713,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -4507,15 +4827,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4804355696437530, guid: 9ba406a2e602c6a40929edce36a805f5, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4804355696437530, guid: 9ba406a2e602c6a40929edce36a805f5, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4804355696437530, guid: 9ba406a2e602c6a40929edce36a805f5, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4804355696437530, guid: 9ba406a2e602c6a40929edce36a805f5, type: 2}
       propertyPath: m_LocalRotation.w
@@ -4523,7 +4843,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4804355696437530, guid: 9ba406a2e602c6a40929edce36a805f5, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9ba406a2e602c6a40929edce36a805f5, type: 2}
@@ -4597,6 +4917,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -4610,6 +4931,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -4766,6 +5088,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -4779,6 +5102,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -4925,7 +5249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1016724718528982, guid: c12a014d71121da449a1970a3d4b69b0, type: 2}
   domino: {fileID: 1579571095446450, guid: db6aa3914b962c14381ee7bb6d651326, type: 2}
-  plane: {fileID: 1123978621931166, guid: 2be722eb0d6019c47afaf8568a681af7, type: 2}
+  plane: {fileID: 1563571705817926, guid: a0cc3d08f9e7a6e41a26b57f9422b4d4, type: 2}
   stage: {fileID: 1219935309607334, guid: 5840d25243a1d2449a135a3f7e01bef7, type: 2}
   slope: {fileID: 1843315539557904, guid: e4a80d598cce2514785d5e58f53d8f56, type: 2}
   goal: {fileID: 1131590712691838, guid: cc57f16e42745d74e966407a23aa1d22, type: 2}
@@ -4935,6 +5259,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -4948,6 +5273,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -5071,7 +5397,7 @@ RectTransform:
   m_Children:
   - {fileID: 1812419618}
   m_Father: {fileID: 931797299}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5089,6 +5415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b9f4438b8287b4897035dec80d4db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: {fileID: 0}
 --- !u!114 &1605943785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5109,8 +5436,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.9852941, g: 0.02173445, b: 0.02173445, a: 1}
+    m_PressedColor: {r: 0, g: 0.97794116, b: 0.23883171, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5603,6 +5930,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -5616,6 +5944,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -6049,6 +6378,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -6062,6 +6392,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -6309,6 +6640,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 1134942691720482, guid: 1ade51f70e3bd9f41af50a1ab284f6bb, type: 2}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 864109287}
   off: {fileID: 2125319709}
   setball: 0
@@ -6322,6 +6654,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
@@ -6536,7 +6869,7 @@ RectTransform:
   m_Children:
   - {fileID: 164405385}
   m_Father: {fileID: 931797299}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6554,6 +6887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0b9f4438b8287b4897035dec80d4db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  world: {fileID: 0}
 --- !u!114 &1906015845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6574,8 +6908,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.97794116, g: 0, b: 0, a: 1}
+    m_PressedColor: {r: 0.01492216, g: 1, b: 0.14592843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6950,7 +7284,7 @@ RectTransform:
   m_Children:
   - {fileID: 1904991327}
   m_Father: {fileID: 931797299}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7112,6 +7446,7 @@ MonoBehaviour:
   canon: {fileID: 0}
   fan: {fileID: 0}
   spiral: {fileID: 0}
+  stobj: {fileID: 0}
   on: {fileID: 0}
   off: {fileID: 0}
   setball: 0
@@ -7125,6 +7460,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0

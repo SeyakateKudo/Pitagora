@@ -20,6 +20,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
     public GameObject canon;
     public GameObject fan;
     public GameObject spiral;
+    public GameObject stobj;
 
     public GameObject on;
     public GameObject off;
@@ -35,6 +36,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
     public bool setcanon;
     public bool setfan; 
     public bool setspiral;
+    public bool setstobj;
 
     public bool setdelete;
     public bool set_createmode;
@@ -52,6 +54,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         {
             GameObject cube = GameObject.Instantiate(ball);//Cube Prefab の情報を用いて実体
             cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            
         }
         else if (setboard == true)
         {
@@ -103,6 +106,11 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
             GameObject cube = GameObject.Instantiate(spiral);//Cube Prefab の情報を用いて実体
             cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
+        else if (setstobj == true)
+        {
+            GameObject cube = GameObject.Instantiate(stobj);//Cube Prefab の情報を用いて実体
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+        }
         else if (setdelete == true)
             {
                 Destroy(gameObject);
@@ -131,6 +139,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -151,6 +160,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -171,6 +181,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -191,6 +202,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -211,6 +223,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -231,6 +244,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -251,6 +265,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(true);
         on.SetActive(false);
@@ -271,6 +286,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -291,6 +307,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -311,6 +328,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -331,6 +349,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -351,6 +370,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = true;
         rev.set_adjustmode = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -370,6 +390,28 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setfan = false;
         rev.set_adjustmode = false;
         rev.setspiral = true;
+        rev.setstobj = false;
+
+        off.SetActive(false);
+        on.SetActive(false);
+    }
+
+    public void StobjClickButton()
+    {
+        rev.setball = false;
+        rev.setboard = false;
+        rev.setplane = false;
+        rev.setstage = false;
+        rev.setslope = false;
+        rev.setgoal = false;
+        rev.setdelete = false;
+        rev.setwide = false;
+        rev.setsara = false;
+        rev.setcanon = false;
+        rev.setfan = false;
+        rev.set_adjustmode = false;
+        rev.setspiral = false;
+        rev.setstobj = true;
 
         off.SetActive(false);
         on.SetActive(false);
@@ -420,6 +462,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         rev.setcanon = false;
         rev.setfan = false;
         rev.setspiral = false;
+        rev.setstobj = false;
 
         rev.set_createmode = false;
         rev.set_adjustmode = false;

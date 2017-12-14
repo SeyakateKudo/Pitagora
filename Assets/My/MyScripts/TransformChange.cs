@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class TransformChange : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject world;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -62,21 +64,25 @@ public class TransformChange : MonoBehaviour {
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Obj");
         foreach (GameObject objs in obj)
-            objs.transform.Rotate(0, 15, 0);
+            objs.transform.parent = world.transform;
 
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
-            plys.transform.Rotate(0, 15, 0);
+            plys.transform.parent = world.transform;
+
+        world.transform.Rotate(0, 15, 0);
     }
 
     public void RightRote()
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Obj");
         foreach (GameObject objs in obj)
-            objs.transform.Rotate(0, -15, 0);
+            objs.transform.parent = world.transform;
 
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
-            plys.transform.Rotate(0, -15, 0);
+            plys.transform.parent = world.transform;
+
+        world.transform.Rotate(0, -15, 0);
     }
 }

@@ -34,7 +34,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1201438641533850}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.05, y: 0, z: 1.157}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1307239462663942, guid: ff821bd8f8e80894b8a4dd06540a152c, type: 2}
   domino: {fileID: 1553271191439348, guid: 68d04a4ff64aae34bb64baeadd60e65c, type: 2}
-  plane: {fileID: 1123978621931166, guid: 2be722eb0d6019c47afaf8568a681af7, type: 2}
+  plane: {fileID: 1563571705817926, guid: a0cc3d08f9e7a6e41a26b57f9422b4d4, type: 2}
   stage: {fileID: 1098544731813924, guid: f575c2a71e7b4ca48bac9c2df59ee147, type: 2}
   slope: {fileID: 1581339105135444, guid: 998ce3bf0b1f3864bb0ba860eb33bdae, type: 2}
   goal: {fileID: 1087198633825384, guid: 0ed271e1e9cdc414894a1337cb6c49a0, type: 2}
@@ -75,6 +75,9 @@ MonoBehaviour:
   canon: {fileID: 1649844276687032, guid: 708e54c5a4fbe1c47a423215f57aba7c, type: 2}
   fan: {fileID: 1134942691720482, guid: 1ade51f70e3bd9f41af50a1ab284f6bb, type: 2}
   spiral: {fileID: 1820595416254990, guid: 268ee76324ae6354faa6271d5b58a494, type: 2}
+  stobj: {fileID: 1764557137072058, guid: 552a957adc20c2b4eb2a1527ec7e927d, type: 2}
+  on: {fileID: 0}
+  off: {fileID: 0}
   setball: 0
   setboard: 0
   setplane: 0
@@ -86,6 +89,7 @@ MonoBehaviour:
   setcanon: 0
   setfan: 0
   setspiral: 0
+  setstobj: 0
   setdelete: 0
   set_createmode: 0
   set_adjustmode: 0
