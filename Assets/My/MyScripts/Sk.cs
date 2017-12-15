@@ -9,6 +9,7 @@ public class Sk : MonoBehaviour, IInputClickHandler
 
     public GameObject ball;
     public GameObject ss;
+    bool checkball = false;
 
     // Use this for initialization
     void Start()
@@ -24,8 +25,27 @@ public class Sk : MonoBehaviour, IInputClickHandler
 
     public void OnInputClicked(InputClickedEventData eventData)
     {
-        Instantiate(ball, ss.transform.position, ss.transform.rotation);
+        ChildCheck();
+
+        if (checkball == true)
+        {
+            Instantiate(ball, ss.transform.position, ss.transform.rotation);
+        }
+        ball.transform.parent = ss.transform;
     }
 
+    public void ChildCheck()
+    {
+        int ObjCount = ss.transform.childCount;
+
+        if (ObjCount == 1)
+        {
+            checkball = true;
+        }
+        else
+        {
+            checkball = false;
+        }
+    }
 
 }
