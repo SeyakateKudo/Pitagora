@@ -25,14 +25,9 @@ public class Sk : MonoBehaviour, IInputClickHandler
 
     public void OnInputClicked(InputClickedEventData eventData)
     {
-        ChildCheck();
-
-        if (checkball == true)
-        {
             Instantiate(ball, ss.transform.position, ss.transform.rotation);
-        }
-        ball.transform.parent = ss.transform;
     }
+    
 
     public void ChildCheck()
     {
