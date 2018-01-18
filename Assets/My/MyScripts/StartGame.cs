@@ -8,6 +8,7 @@ public class StartGame : MonoBehaviour
     Rigidbody rb;
     public AudioClip audioClip1;
     private AudioSource audioSource;
+    public GameObject world;
 
     // Use this for initialization
     void Start()
@@ -24,14 +25,8 @@ public class StartGame : MonoBehaviour
     public void OnClick()
     {
         PlayAudio();
-
-        GameObject[] ball = GameObject.FindGameObjectsWithTag("Player");
-        foreach (GameObject balls in ball)
-        {
-            rb = balls.GetComponent<Rigidbody>();
-            rb.useGravity = true;
-            rb.isKinematic = false;
-        }
+        Worldz();
+        StartCoroutine(Sample());
     }
 
     public void PlayAudio()
@@ -47,4 +42,30 @@ public class StartGame : MonoBehaviour
         audioSource.enabled = false;
     }
 
+    public void Worldz()
+    {
+        GameObject[] obj = GameObject.FindGameObjectsWithTag("Obj");
+        foreach (GameObject objs in obj)
+            objs.transform.position += new Vector3(0, 0, 1f);
+
+        GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject plys in ply)
+            plys.transform.position += new Vector3(0, 0, 1f);
+    }
+
+    private IEnumerator Sample()
+    {
+        yield return new WaitForSeconds(1.0f);
+
+        //GameObject zanzo = GameObject.FindGameObjectWithTag("Zanzo");
+        //zanzo.SetActive(true);
+
+        GameObject[] ball = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject balls in ball)
+        {
+            rb = balls.GetComponent<Rigidbody>();
+            rb.useGravity = true;
+            rb.isKinematic = false;
+        }
+    }
 }

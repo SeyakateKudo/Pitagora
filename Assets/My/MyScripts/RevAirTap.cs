@@ -64,12 +64,12 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         else if (setplane == true)
         {
             GameObject cube = GameObject.Instantiate(plane);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, -0.2f, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setstage == true)
         {
             GameObject cube = GameObject.Instantiate(stage);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, -0.2f, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setslope == true)
         {

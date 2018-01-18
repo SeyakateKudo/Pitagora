@@ -8,6 +8,8 @@ TagManager:
   - bar
   - Audio
   - Obj
+  - World
+  - Zanzo
   layers:
   - Default
   - TransparentFX
