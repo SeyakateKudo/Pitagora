@@ -53,63 +53,63 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         if (setball == true)
         {
             GameObject cube = GameObject.Instantiate(ball);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
             
         }
         else if (setboard == true)
         {
             GameObject cube = GameObject.Instantiate(domino);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setplane == true)
         {
             GameObject cube = GameObject.Instantiate(plane);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setstage == true)
         {
             GameObject cube = GameObject.Instantiate(stage);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setslope == true)
         {
             GameObject cube = GameObject.Instantiate(slope);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setgoal == true)
         {
             GameObject cube = GameObject.Instantiate(goal);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setwide == true)
         {
             GameObject cube = GameObject.Instantiate(wide);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, -0.1f, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setsara == true)
         {
             GameObject cube = GameObject.Instantiate(sara);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, -0.1f, 0.9f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, -0.1f, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setcanon == true)
         {
             GameObject cube = GameObject.Instantiate(canon);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setfan == true)
         {
             GameObject cube = GameObject.Instantiate(fan);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setspiral == true)
         {
             GameObject cube = GameObject.Instantiate(spiral);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, -0.1f, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setstobj == true)
         {
             GameObject cube = GameObject.Instantiate(stobj);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setdelete == true)
             {

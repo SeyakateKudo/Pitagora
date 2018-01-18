@@ -20,44 +20,44 @@ public class TransformChange : MonoBehaviour {
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Obj");
         foreach (GameObject objs in obj)
-            objs.transform.position -= new Vector3(0, 0.5f, 0);
+            objs.transform.position -= new Vector3(0, 0.3f, 0);
 
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
-            plys.transform.position -= new Vector3(0, 0.5f, 0);
+            plys.transform.position -= new Vector3(0, 0.3f, 0);
     }
 
     public void UpperClick()
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Obj");
         foreach (GameObject objs in obj)
-            objs.transform.position += new Vector3(0, 0.5f, 0);
+            objs.transform.position += new Vector3(0, 0.3f, 0);
 
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
-            plys.transform.position += new Vector3(0, 0.5f, 0);
+            plys.transform.position += new Vector3(0, 0.3f, 0);
     }
 
     public void LeftClick()
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Obj");
         foreach (GameObject objs in obj)
-            objs.transform.position -= new Vector3(0.5f, 0, 0);
+            objs.transform.position -= new Vector3(0.3f, 0, 0);
 
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
-            plys.transform.position -= new Vector3(0.5f, 0, 0);
+            plys.transform.position -= new Vector3(0.3f, 0, 0);
     }
 
     public void RightClick()
     {
         GameObject[] obj = GameObject.FindGameObjectsWithTag("Obj");
         foreach (GameObject objs in obj)
-            objs.transform.position += new Vector3(0.5f, 0, 0);
+            objs.transform.position += new Vector3(0.3f, 0, 0);
 
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
-            plys.transform.position += new Vector3(0.5f, 0, 0);
+            plys.transform.position += new Vector3(0.3f, 0, 0);
     }
 
     public void LeftRote()
@@ -84,5 +84,16 @@ public class TransformChange : MonoBehaviour {
             plys.transform.parent = world.transform;
 
         world.transform.Rotate(0, -15, 0);
+    }
+
+    public void ZClick()
+    {
+        GameObject[] obj = GameObject.FindGameObjectsWithTag("Obj");
+        foreach (GameObject objs in obj)
+            objs.transform.position += new Vector3(0, 0, 0.3f);
+
+        GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject plys in ply)
+            plys.transform.position += new Vector3(0, 0, 0.3f);
     }
 }
