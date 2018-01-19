@@ -4,43 +4,41 @@ using System.Collections.Generic;
 using HoloToolkit.Unity.InputModule;
 using UnityEngine;
 
-public class Sk : MonoBehaviour, IInputClickHandler
+public class Sk : StartGame, IInputClickHandler
 {
 
     public GameObject ball;
     public GameObject ss;
-    bool checkball = false;
+    //public bool checkball;
+
+    public bool checkb;
+    
 
     // Use this for initialization
     void Start()
     {
-
+        ss.GetComponent<Renderer>().material.color = Color.yellow;
+        checkb = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(ss.GetComponent<Renderer>().material.color == Color.yellow)
+        {
+            checkb = true;
+        }
     }
 
     public void OnInputClicked(InputClickedEventData eventData)
     {
+        if (checkb == true)
+        {
             Instantiate(ball, ss.transform.position, ss.transform.rotation);
-    }
-    
-
-    public void ChildCheck()
-    {
-        int ObjCount = ss.transform.childCount;
-
-        if (ObjCount == 1)
-        {
-            checkball = true;
+            ss.GetComponent<Renderer>().material.color = Color.blue;
+            checkb = false;
         }
-        else
-        {
-            checkball = false;
-        }
+
     }
 
 }

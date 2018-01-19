@@ -25,6 +25,10 @@ public class TransformChange : MonoBehaviour {
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
             plys.transform.position -= new Vector3(0, 0.3f, 0);
+
+        GameObject[] st = GameObject.FindGameObjectsWithTag("St");
+        foreach (GameObject sts in st)
+            sts.transform.position -= new Vector3(0, 0.3f, 0);
     }
 
     public void UpperClick()
@@ -36,6 +40,10 @@ public class TransformChange : MonoBehaviour {
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
             plys.transform.position += new Vector3(0, 0.3f, 0);
+
+        GameObject[] st = GameObject.FindGameObjectsWithTag("St");
+        foreach (GameObject sts in st)
+            sts.transform.position += new Vector3(0, 0.3f, 0);
     }
 
     public void LeftClick()
@@ -47,6 +55,10 @@ public class TransformChange : MonoBehaviour {
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
             plys.transform.position -= new Vector3(0.3f, 0, 0);
+
+        GameObject[] st = GameObject.FindGameObjectsWithTag("St");
+        foreach (GameObject sts in st)
+            sts.transform.position -= new Vector3(0.3f, 0, 0);
     }
 
     public void RightClick()
@@ -58,6 +70,10 @@ public class TransformChange : MonoBehaviour {
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
             plys.transform.position += new Vector3(0.3f, 0, 0);
+
+        GameObject[] st = GameObject.FindGameObjectsWithTag("St");
+        foreach (GameObject sts in st)
+            sts.transform.position += new Vector3(0.3f, 0, 0);
     }
 
     public void LeftRote()
@@ -70,7 +86,10 @@ public class TransformChange : MonoBehaviour {
         foreach (GameObject plys in ply)
             plys.transform.parent = world.transform;
 
-        world.transform.Rotate(0, 15, 0);
+        GameObject[] st = GameObject.FindGameObjectsWithTag("St");
+        foreach (GameObject sts in st)
+            sts.transform.parent = world.transform;
+            world.transform.Rotate(0, 15, 0);
     }
 
     public void RightRote()
@@ -82,6 +101,10 @@ public class TransformChange : MonoBehaviour {
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
             plys.transform.parent = world.transform;
+
+        GameObject[] st = GameObject.FindGameObjectsWithTag("St");
+        foreach (GameObject sts in st)
+            sts.transform.parent = world.transform;
 
         world.transform.Rotate(0, -15, 0);
     }
@@ -95,5 +118,9 @@ public class TransformChange : MonoBehaviour {
         GameObject[] ply = GameObject.FindGameObjectsWithTag("Player");
         foreach (GameObject plys in ply)
             plys.transform.position += new Vector3(0, 0, 0.3f);
+
+        GameObject[] st = GameObject.FindGameObjectsWithTag("St");
+        foreach (GameObject sts in st)
+            sts.transform.position += new Vector3(0, 0, 0.3f);
     }
 }

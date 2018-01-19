@@ -109,7 +109,7 @@ public class RevAirTap : MonoBehaviour, IInputClickHandler
         else if (setstobj == true)
         {
             GameObject cube = GameObject.Instantiate(stobj);//Cube Prefab の情報を用いて実体
-            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.2f);  //自分からみて前方1.2mの位置を空間内の位置に変換
+            cube.transform.position = Camera.main.transform.TransformPoint(0, 0, 1.25f);  //自分からみて前方1.2mの位置を空間内の位置に変換
         }
         else if (setdelete == true)
             {
