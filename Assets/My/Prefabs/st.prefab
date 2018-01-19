@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 114375962087131280}
   m_Layer: 0
   m_Name: st
-  m_TagString: Obj
+  m_TagString: St
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,8 +212,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2126299ed18df44b487083c7e84e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClip1: {fileID: 0}
+  world: {fileID: 0}
+  checkball: 0
+  sk: {fileID: 0}
+  scriptSK: {fileID: 0}
   ball: {fileID: 1142311734318840, guid: e02427ed0178d464694e2453136a788f, type: 2}
   ss: {fileID: 1764557137072058}
+  checkb: 0
 --- !u!114 &114851938493245044
 MonoBehaviour:
   m_ObjectHideFlags: 1

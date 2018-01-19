@@ -3243,7 +3243,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931797295}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.86}
+  m_LocalPosition: {x: 0, y: 0, z: 2.5802}
   m_LocalScale: {x: 0.0012675513, y: 0.0011042751, z: 0.001}
   m_Children:
   - {fileID: 247305480}
@@ -6251,7 +6251,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010302963436, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000012149591842, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
         type: 2}
@@ -6952,6 +6952,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip1: {fileID: 8300000, guid: 352eec7e2d3de884890ad605e7164156, type: 3}
   world: {fileID: 1957024486}
+  checkball: 0
+  sk: {fileID: 0}
+  scriptSK: {fileID: 0}
 --- !u!1 &1904991326
 GameObject:
   m_ObjectHideFlags: 0

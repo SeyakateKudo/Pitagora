@@ -86,9 +86,11 @@ public class StartGame : MonoBehaviour
             rb.useGravity = true;
             rb.isKinematic = false;
         }
+
+        /*bool値参照失敗
         sk = GameObject.Find("st");
         scriptSK = sk.GetComponent<Sk>();
         checkball = scriptSK.checkb;
-        checkball = true;
+        checkball = true;*/
     }
 }
