@@ -31,7 +31,7 @@ public class StartGame : MonoBehaviour
     public void OnClick()
     {
         //PlayAudio();
-        Worldz();
+        //Worldz();
         StartCoroutine(Sample());
     }
 
@@ -48,7 +48,7 @@ public class StartGame : MonoBehaviour
         audioSource.enabled = false;
     }
 
-    public void Worldz()
+    /*public void Worldz()
     {
         if (startflag == true)
         {
@@ -65,7 +65,7 @@ public class StartGame : MonoBehaviour
                 plys.transform.position += new Vector3(0, 0, 1f);
             startflag = false;
         }
-    }
+    }*/
 
     private IEnumerator Sample()
     {
