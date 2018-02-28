@@ -43,6 +43,9 @@ GameObject:
   - component: {fileID: 64466788632772906}
   - component: {fileID: 114264572225049782}
   - component: {fileID: 114070169990360276}
+  - component: {fileID: 114840778791855124}
+  - component: {fileID: 65882196022684796}
+  - component: {fileID: 65145669578946810}
   m_Layer: 0
   m_Name: Koiru
   m_TagString: Obj
@@ -74,7 +77,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1170635479243830}
   m_LocalRotation: {x: -0, y: -0, z: 9.313226e-10, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.018, y: 0, z: -0.012}
   m_LocalScale: {x: 0.001, y: 4, z: 0.001}
   m_Children: []
   m_Father: {fileID: 4829380971681680}
@@ -99,8 +102,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1820595416254990}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.377, y: -0.035, z: 1.306}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 6, y: 4, z: 6}
   m_Children:
   - {fileID: 4334793052736684}
@@ -254,6 +257,30 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 76bd679ed78f9e34186e9b7ed57dabe3, type: 3}
+--- !u!65 &65145669578946810
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820595416254990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001, y: 3, z: 0.001}
+  m_Center: {x: -0.016, y: 0, z: 0.027}
+--- !u!65 &65882196022684796
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820595416254990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001, y: 3, z: 0.001}
+  m_Center: {x: -0.02, y: 0, z: -0.012}
 --- !u!95 &95182250737201252
 Animator:
   serializedVersion: 3
@@ -293,3 +320,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a39de7ba4bae6428d12fac4bc9bde7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114840778791855124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820595416254990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24d56224a698fb4889f20fa5fe3d0e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 1170635479243830}
+  bar1: {fileID: 1990346903183586}

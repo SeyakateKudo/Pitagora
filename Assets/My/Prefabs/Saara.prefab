@@ -40,6 +40,8 @@ GameObject:
   - component: {fileID: 33539570506028874}
   - component: {fileID: 23807511899169462}
   - component: {fileID: 64066633724906072}
+  - component: {fileID: 65133597043513730}
+  - component: {fileID: 114716633256778224}
   m_Layer: 0
   m_Name: pPipe1
   m_TagString: Untagged
@@ -89,7 +91,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1422649322773938}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.099, z: 0.903}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children:
   - {fileID: 4692706938705254}
@@ -106,7 +108,7 @@ Transform:
   m_GameObject: {fileID: 1925212412307864}
   m_LocalRotation: {x: -0, y: -0, z: 9.313226e-10, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 7, z: 0.05}
+  m_LocalScale: {x: 0.08, y: 7, z: 0.08}
   m_Children: []
   m_Father: {fileID: 4108093504070144}
   m_RootOrder: 2
@@ -297,6 +299,18 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: f21eecd6a062d5a44925ebe2937c3cb8, type: 3}
+--- !u!65 &65133597043513730
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1522991499652780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001, y: 0.13, z: 0.001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95450053768978516
 Animator:
   serializedVersion: 3
@@ -325,3 +339,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb240794df159f42abeee4ad9e9754c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114716633256778224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1522991499652780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764c6750e1c57dd4a87c158b80b7c003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 1925212412307864}

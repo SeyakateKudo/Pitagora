@@ -28,6 +28,8 @@ GameObject:
   - component: {fileID: 114907297300239288}
   - component: {fileID: 54353229531547804}
   - component: {fileID: 82758078181665952}
+  - component: {fileID: 65168131573499060}
+  - component: {fileID: 114950309142081738}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Obj
@@ -78,7 +80,7 @@ Transform:
   m_GameObject: {fileID: 1384176225964578}
   m_LocalRotation: {x: -0, y: -0, z: 9.313226e-10, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0001, y: 3, z: 0.0001}
+  m_LocalScale: {x: 0.0004, y: 0.2, z: 0.0004}
   m_Children: []
   m_Father: {fileID: 4934197553203736}
   m_RootOrder: 1
@@ -103,7 +105,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1087198633825384}
   m_LocalRotation: {x: 0, y: 0.976296, z: 0, w: 0.21643977}
-  m_LocalPosition: {x: 0.1126, y: 0, z: -0.2414}
+  m_LocalPosition: {x: -1.511225, y: 0.97, z: -3.638874}
   m_LocalScale: {x: 13, y: 4, z: 13}
   m_Children:
   - {fileID: 4498567474316592}
@@ -257,6 +259,18 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 8c9c716ec68e5d04aa1dec30b57213f0, type: 3}
+--- !u!65 &65168131573499060
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087198633825384}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.001, y: 0.4, z: 0.0001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65357442867914052
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -407,3 +421,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb240794df159f42abeee4ad9e9754c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114950309142081738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087198633825384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764c6750e1c57dd4a87c158b80b7c003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 1384176225964578}
