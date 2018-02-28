@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4390815875513178}
   - component: {fileID: 33306385799628552}
   - component: {fileID: 23284738020589886}
+  - component: {fileID: 114630803730430626}
+  - component: {fileID: 65577597803427054}
   m_Layer: 0
   m_Name: AdjustBar
   m_TagString: bar
@@ -213,6 +215,18 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 8f2fc9388355352489983f697cb19532, type: 3}
+--- !u!65 &65577597803427054
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1546172461092986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 2, z: 0.9999999}
+  m_Center: {x: 0, y: 0, z: -0.000030517578}
 --- !u!95 &95303748758330294
 Animator:
   serializedVersion: 3
@@ -241,6 +255,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb240794df159f42abeee4ad9e9754c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114630803730430626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1546172461092986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764c6750e1c57dd4a87c158b80b7c003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 1546172461092986}
 --- !u!114 &114661278490513244
 MonoBehaviour:
   m_ObjectHideFlags: 1
